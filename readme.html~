@@ -32,6 +32,6 @@ The solution to the sticky footer dictates that the page is cut up vertically in
 As defined in the css box model the actual width of an element is determined by the sum of the borders, margins, paddings and the specified width. Since the frame classes we define are only there to define dimensions and position it is most convenient to set the borders, margins and paddings to zero. These properties will be defined by the elements within the different frames. 
 </p>
 <p>
-To start simple frames with three different widths are defined combined with floating properties left and right. 
+To start simple frames with three different widths are defined combined with floating properties left and right. This simple setup is defined in the stylesheet that can be found in the repository together with a demo.
 </p>
 </body>
