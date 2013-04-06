@@ -1,0 +1,103 @@
+/*  
+Spring 2013
+Marcel Wijnen
+Default layout structure
+*/
+
+
+/*
+MW(4-13):
+The margin and padding need to be set to zero, because the default values are not zero. The latter will mess up certain other aspects.
+*/
+	html, body {
+		height: 100%;
+		margin:0;
+		padding:0;
+	}
+
+/*
+MW(4-13): 
+The main structure is defined by the non-footer part and the footer part. As described in http://www.cssstickyfooter.com/using-sticky-footer-code.html this structure is needed to create a footer that sticks to the bottom in case the content of the page is less then 100%.
+*/
+	#non-footer {
+		min-height: 100%;
+		background-color: white;
+	}
+
+	.center {
+		width:900px;
+		margin:0px auto;
+	}
+
+  .float_left {
+		float:left;
+	}
+
+	.float_right {
+		float:right;
+	}
+
+	/*MW: it is convenient to choose the padding + border + margin + width = approx 300px which should be one third of the total width minus a bit*/
+	/*the idea is that either three small frames, as small (N) and a medium frame or a single large frame can be used.*/
+	/*The width should be a bit less then the total width of the .center class */
+	/* width of small frame times tree <900px */
+  /* width of small frame plus medium <900px */
+	/* width of large frame <900px*/
+	.content-frame-small-left, 
+	.content-frame-small-right,
+	.content-frame-medium-left,
+	.content-frame-medium-right,
+	.content-frame-large {
+		padding:14px;
+		background-color:white;
+		border:1px solid black;
+		margin:5px; 		
+	}
+  .content-frame-small-left, 
+	.content-frame-small-right {
+		width:260px; /*MW: 300 - 2*(14+1+5) = 260*/
+	}
+  .content-frame-medium-left, 
+	.content-frame-medium-right {
+		width:560px; /*MW: 600 - 2*(14+1+5) = 560*/
+	}
+  .content-frame-large {
+		width:860px; /*MW: 900 - 2*(14+1+5) = 860*/
+	}
+	.content-frame-small-left,
+  .content-frame-medium-left,
+	.content-frame-large {
+		float:left;
+	}
+
+	.content-frame-small-right,
+  .content-frame-medium-right {
+		float:right;
+	}
+
+	#non-footer-header {
+		background-color: #E1D2D2;
+		height:200px;
+	}
+
+	#non-footer-container {
+		background-color: #F0EAEA;
+		overflow:auto;
+		padding-bottom: 150px; /*MW: this should match the footer height */
+	}  /* must be same height as the footer */
+
+	#footer {position: relative;
+		margin-top: -150px; /* negative value of footer height */
+		height: 150px;
+		background-color: #E1D2D2;
+		clear:both;} 
+
+	/*Opera Fix*/
+	body:before {
+		content:"";
+		height:100%;
+		float:left;
+		width:0;
+		margin-top:-32767px;/
+	}
+

@@ -1,0 +1,30 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>README-CSS DEFAULTS</title>
+</head>
+<body>
+<h1>Introduction</h1>
+<p>
+As with any project it is best to have a structure by which you approach it. For certain project such a structure is in your head, for other project you need a cheat sheet. Website layouts are such a project for me. Primarily I work on software that is used for modelling scenario's, on the side I like to work on web applications and a dealing with CSS is always a part of that. I'm not a designer, so my goal is to make things look good with minimum effort leaving more time available for the stuff that I personally enjoy better.
+</p> 
+<p>
+A while ago I stumbled into the <a href="http://www.jquery.com">jQuery library</a>, what a tresure that is. It has all sorts of goodies that make your application look so much better. Personally, I'm a big fan of the sortable methods, but obviously jQuery has much more it offers the world. Together with great functionality jQuery has an integrated theme roller.  
+</p>
+<p>
+The theme roller is the focus at this point. Basically, it works with all the functionalities that are offered in an integrated way. So when you work on a project and want to change the layout of the web application pluggin in a new theme gets the job done. Now, since the theme roller provides a lot, but not everything there will be the need to add a couple of things manually. The goal is to set it up in such a way that the custom attributes can we adjusted in a simple way when the theme is changed.
+</p>
+<p>
+To achieve the above the idea is to make the custom attributes dependent on the images and color scheme that comes with the theme. The attributes that I'm interested in are a header navigation bar, a footer and several content frames. The contraint that I will work under is that the custom style sheet should contain a reference to each color and image only once.   
+</p>
+<h1>Basic structure - footer and non-footer</h1>
+<p>
+Starting with the footer brings us to the first important decision in our structure. As can be read in this article on <a href="http://www.cssstickyfooter.com/using-sticky-footer-code.html">sticky footers</a> it can be problematic to get the footer to stick at the bottom of the page in case the content of the page is less than 100% of the page. I believe there is a spectrum of solutions to this, but this particular solution seems the be effective an simple, which makes it perfect in this context.  
+</p>
+<p>
+The solution to the sticky footer dictates that the page is cut up vertically in a <b>non-footer</b> and a <b>footer</b> part. The second vertical devision is the header and the container. Within the header and container the horizontal devision can be defined. 
+</p>
+
+</body>
