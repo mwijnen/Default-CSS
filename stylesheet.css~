@@ -48,21 +48,21 @@ The main structure is defined by the non-footer part and the footer part. As des
 	.content-frame-medium-left,
 	.content-frame-medium-right,
 	.content-frame-large {
-		padding:0px;
+		padding:14px;
 		background-color:white;
-		border:0px;
-		margin:0px; 		
+		border:1px solid black;
+		margin:5px; 		
 	}
   .content-frame-small-left, 
 	.content-frame-small-right {
-		width:300px; /*MW: 300 - 2*(14+1+5) = 260*/
+		width:260px; /*MW: 300 - 2*(14+1+5) = 260*/
 	}
   .content-frame-medium-left, 
 	.content-frame-medium-right {
-		width:600px; /*MW: 600 - 2*(14+1+5) = 560*/
+		width:560px; /*MW: 600 - 2*(14+1+5) = 560*/
 	}
   .content-frame-large {
-		width:900px; /*MW: 900 - 2*(14+1+5) = 860*/
+		width:860px; /*MW: 900 - 2*(14+1+5) = 860*/
 	}
 	.content-frame-small-left,
   .content-frame-medium-left,
