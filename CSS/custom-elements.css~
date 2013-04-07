@@ -8,7 +8,7 @@
 		.navigation-bar, 
 		.navigation-bar-rounded-corners
 		 {
-			font-size:9pt;
+			font-size:10pt;
       width: 100%;
       float: left;
       margin: 0;
@@ -41,11 +41,10 @@
 			border-left:solid 1px #777777;
 		}
 		
-		.navigation-bar-right-border {
-			border-left:solid 1px #777777;
-		}
-
 		.navigation-bar-rounded-corners, .navigation-bar-rounded-corners li a {
 			-moz-border-radius: 7px;
 			border-radius: 7px;
 		}
+
+/*MW: Content frames */
+		

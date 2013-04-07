@@ -84,8 +84,7 @@ The main structure is defined by the non-footer part and the footer part. As des
 	padding-bottom: 150px; /*MW: this should match the footer height */
 }  
 
-#footer {
-	position: relative;
+#footer {position: relative;
 	margin-top: -150px; /* negative value of footer height */
 	height: 150px;
 } 

@@ -5,14 +5,25 @@
 <title>Default-Layout-Template</title>
 <link href="../CSS/all.css" rel="stylesheet">
 <style>
+/*MW(4-13): Note that the styles here are added to visualize the elements that otherwise would not be visible.*/
+/* These elements are added to define position and dimensions only, therefore by them selves these elements have no visible properties */
 
+#non-footer-header {
+	background-color: #E1D2D2;
+}
+#non-footer-container {
+	background-color: #F0EAEA;
+}
+#footer {
+	background-color: #E1D2D2;
+}
 </style>
 </head>
 <body>
 
 <div id="non-footer">	
 	<div id="non-footer-header" class="center">
-		<h1>id="non-footer-header" class="center"</h1>
+		<h3>id="non-footer-header" class="center"</h3>
 		<div class="content-frame-large">
 			<b>class="content-frame-large"(L1)</b> 
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 		nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -20,7 +31,7 @@
 	</div>
 
 	<div id="non-footer-container" class="center">
-		<h1>id="non-footer-container" class="center"</h1>
+		<h3>id="non-footer-container" class="center"</h3>
 		<div class="content-frame-small-left">
 			<b>class="content-frame-small-left"(L1)</b>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 		nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -46,7 +57,7 @@
 </div>
 
 <div id="footer" class="center">
-		<h1>id="footer" class="center"</h1>
+		<h3>id="footer" class="center"</h3>
 		<div class="content-frame-large">
 			<b>class="content-frame-large"(L1)</b> 
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 		nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
