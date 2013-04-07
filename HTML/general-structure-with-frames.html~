@@ -7,7 +7,6 @@
 <style>
 /*MW(4-13): Note that the styles here are added to visualize the elements that otherwise would not be visible.*/
 /* These elements are added to define position and dimensions only, therefore by them selves these elements have no visible properties */
-
 #non-footer-header {
 	background-color: #E1D2D2;
 }
@@ -17,6 +16,10 @@
 #footer {
 	background-color: #E1D2D2;
 }
+h3 {
+	margin:0;
+	padding:0;
+}
 </style>
 </head>
 <body>
@@ -24,12 +27,9 @@
 <div id="non-footer">	
 	<div id="non-footer-header" class="center">
 		<h3>id="non-footer-header" class="center"</h3>
-		<div class="content-frame-large">
-			<b>class="content-frame-large"(L1)</b> 
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 		nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-		</div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 		nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 	</div>
-
+<div class=clear-float-both></div>
 	<div id="non-footer-container" class="center">
 		<h3>id="non-footer-container" class="center"</h3>
 		<div class="content-frame-small-left">

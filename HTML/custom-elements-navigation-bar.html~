@@ -6,7 +6,7 @@
 	<link href="../CSS/all.css" rel="stylesheet">
 	<link href="../jQuery/css/custom-theme/jquery-ui-1.10.2.custom.css" rel="stylesheet">
 	<style>		
-		/*MW: The horizontal space is defined here, since it is not part of the general style definition */
+		/*The horizontal space is defined here, since it is not part of the general style definition */
 		.horizontal-space {
 			min-height:100px;
 		}

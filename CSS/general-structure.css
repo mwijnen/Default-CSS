@@ -4,7 +4,6 @@ Marcel Wijnen
 Default layout structure
 */
 
-
 /*
 MW(4-13):
 The margin and padding need to be set to zero, because the default values are not zero. The latter will mess up certain other aspects.
@@ -37,17 +36,11 @@ The main structure is defined by the non-footer part and the footer part. As des
 	float:right;
 }
 
-/*MW: it is convenient to choose the padding + border + margin + width = approx 300px which should be one third of the total width minus a bit*/
-/*the idea is that either three small frames, as small (N) and a medium frame or a single large frame can be used.*/
-/*The width should be a bit less then the total width of the .center class */
-/* width of small frame times tree <900px */
-/* width of small frame plus medium <900px */
-/* width of large frame <900px*/
+/*MW: it is convenient to choose the padding & border & margin to be zero, since the element is about structuring the page only*/
 .content-frame-small-left, 
 .content-frame-small-right,
 .content-frame-medium-left,
-.content-frame-medium-right,
-.content-frame-large {
+.content-frame-medium-right {
 	padding:0px;
 	background-color:white;
 	border:0px;
@@ -55,28 +48,24 @@ The main structure is defined by the non-footer part and the footer part. As des
 }
 .content-frame-small-left, 
 .content-frame-small-right {
-	width:300px; /*MW: 300 - 2*(14+1+5) = 260*/
+	width:300px;
 }
 .content-frame-medium-left, 
 .content-frame-medium-right {
-	width:600px; /*MW: 600 - 2*(14+1+5) = 560*/
-}
- .content-frame-large {
-	width:900px; /*MW: 900 - 2*(14+1+5) = 860*/
+	width:600px;
 }
 .content-frame-small-left,
-.content-frame-medium-left,
-.content-frame-large {
+.content-frame-medium-left {
 	float:left;
 }
 
 .content-frame-small-right,
- .content-frame-medium-right {
+.content-frame-medium-right {
 	float:right;
 }
 
 #non-footer-header {
-	height:200px;
+	height:auto;
 }
 
 #non-footer-container {
@@ -97,5 +86,9 @@ body:before {
 	float:left;
 	width:0;
 	margin-top:-32767px;/
+}
+
+.clear-float-both {
+	clear:both;
 }
 
