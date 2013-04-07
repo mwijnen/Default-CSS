@@ -1,0 +1,59 @@
+/*  
+Spring 2013
+Marcel Wijnen
+Default layout structure
+*/
+
+
+/*
+MW(4-13):
+The margin and padding need to be set to zero, because the default values are not zero. The latter will mess up certain other aspects.
+*/
+	html, body {
+		height: 100%;
+		margin:0;
+		padding:0;
+	}
+
+/*
+MW(4-13): 
+The main structure is defined by the non-footer part and the footer part. As described in http://www.cssstickyfooter.com/using-sticky-footer-code.html this structure is needed to create a footer that sticks to the bottom in case the content of the page is less then 100%.
+*/
+	#non-footer {
+		min-height: 100%;
+		background-color:yellow;
+	}
+
+
+	#non-footer-header {
+		
+	}
+
+	#non-footer-header.center
+	{
+		width:900px;
+		margin:0 auto;
+		background-color:green;
+	}
+
+	#non-footer-container {
+		overflow:auto;
+		padding-bottom: 150px; /*MW: this should match the footer height */
+	}  
+
+	#footer {position: relative;
+		margin-top: -150px; /*MW: negative value of footer height */
+		height: 150px; /*MW: this should match the footer height */
+		background-color:red;	
+		clear:both;
+	} 
+
+/*MW(4-13): Not aware of the details of the fix, but leaving it here assuming it has a positive effect for Opera-case*/
+	body:before {
+		content:"";
+		height:100%;
+		float:left;
+		width:0;
+		margin-top:-32767px;/
+	}
+

@@ -1,0 +1,11 @@
+
+
+#header {
+	height:200px;
+	background-color:green;
+}
+
+#header.navigation {
+	display:block;
+	background-color:red;
+}

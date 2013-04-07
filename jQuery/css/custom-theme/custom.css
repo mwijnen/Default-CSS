@@ -1,0 +1,15 @@
+
+
+#header {
+	height:200px;
+	background-color:green;
+}
+
+#header.navigation {
+	display:block;
+	background-color:red;
+}
+
+a {
+   outline: 0;
+}
