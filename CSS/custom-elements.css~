@@ -1,50 +1,78 @@
 
-/*MW: Body */
-		body{
-			font: 10pt "Trebuchet MS", sans-serif;
-		}
+/*MW(4-13): Body */
+body{
+	font: 10pt "Trebuchet MS", sans-serif;
+}
 
-/*MW: Header-navigation-bar */
-		.navigation-bar, 
-		.navigation-bar-rounded-corners
-		 {
-			font-size:10pt;
-      width: 100%;
-      float: left;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-			border-right: 1px solid #777777;
-			background: #2c2e91 url(../jQuery/css/custom-theme/images/ui-bg_glass_40_4043CE_1x400.png) 50% 50% repeat-x;
-      border-bottom: 1px solid #777777;
-    	border-top: 1px solid #777777;
-		}
- 		.navigation-bar li, 
-		.navigation-bar-rounded-corners li {
-      float: left;
-		}
-  	.navigation-bar li a, 
-		.navigation-bar-rounded-corners li a {
-      display: block;
-      padding: 8px 15px;
-      text-decoration: none;
-			border-right: 1px solid #777777;
-			background: #2c2e91 url(../jQuery/css/custom-theme/images/ui-bg_glass_40_4043CE_1x400.png) 50% 50% repeat-x;
-			color: #e3e3e3;
-		}
-   	.navigation-bar li a:hover,
-		.navigation-bar-rounded-corners li a:hover {
-			background: #2c2e91 url(../jQuery/css/custom-theme/images/ui-bg_glass_65_2c2e91_1x400.png) 50% 50% repeat-x;
-			color: #e3e3e3;
-		}
-		.navigation-bar-left-border {
-			border-left:solid 1px #777777;
-		}
-		
-		.navigation-bar-rounded-corners, .navigation-bar-rounded-corners li a {
-			-moz-border-radius: 7px;
-			border-radius: 7px;
-		}
+/*MW(4-13): Header-navigation-bar */
+.navigation-bar, 
+.navigation-bar-rounded-corners {
+	font-size:10pt;
+	width: 900px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	padding-left:7px;
+	list-style: none;
+	border-right: 1px solid #777777;
+	background: #2c2e91 url(../jQuery/css/custom-theme/images/ui-bg_glass_40_4043CE_1x400.png) 50% 50% repeat-x;
+	border-bottom: 1px solid #777777;
+	border-top: 1px solid #777777;
+}
+.navigation-bar li, 
+.navigation-bar-rounded-corners li {
+	float: left;
+}
+.navigation-bar li a, 
+.navigation-bar-rounded-corners li a {
+	display: block;
+	padding: 8px 15px;	
+	text-decoration: none;
+	border-right: 1px solid #777777;
+	background: #2c2e91 url(../jQuery/css/custom-theme/images/ui-bg_glass_40_4043CE_1x400.png) 50% 50% repeat-x;
+	color: #e3e3e3;
+}
+.navigation-bar li a:hover,
+.navigation-bar-rounded-corners li a:hover {
+	background: #2c2e91 url(../jQuery/css/custom-theme/images/ui-bg_glass_65_2c2e91_1x400.png) 50% 50% repeat-x;
+	color: #e3e3e3;
+}
+.navigation-bar-rounded-corners {
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
 
-/*MW: Content frames */
+/*MW(4-13): Image-wrapper */
+.image-wrapper-left, .image-wrapper-right {
+	margin:0;
+	margin-top:20px;
+	margin-bottom:2px;
+}
+.image-wrapper-left {
+	float:left;
+}
+.image-wrapper-right {
+	float:right;
+}
+/*MW(4-13): ToDo: Create a class to print image at top and bottom of div */
+
+/*MW(4-13): Footer-content*/
+.footer-content {
+	background-color:#ECE6E6;
+	min-height:150px;
+	color:#777777;
+	font-size:9pt;
+	padding:12px;
+	padding-top:7px;
+}
+.footer-content a:link,
+.footer-content a:visited,
+.footer-content a:hover,
+.footer-content a:active {
+	text-decoration:underline;
+	color:#777777;
+}
+
+
+/*MW(4-13): Content frames */
 		

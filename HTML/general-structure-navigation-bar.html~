@@ -15,12 +15,12 @@
 <div id="non-footer">	
 	<div id="non-footer-header" class="center">
 		<div>
-			<div class=image-wrapper-left>
-				<img src="logo-wijnen.png" alt="Logo">
-			</div>
-			<div class=image-wrapper-right>
-				<img src="logo-funda-75.gif" alt="Logo">
-			</div>
+		<div class=image-wrapper-left>
+			<img src="logo-wijnen.png" alt="Logo">
+		</div>
+		<div class=image-wrapper-right>
+			<img src="logo-funda-75.gif" alt="Logo">
+		</div>
 		</div>
 		<div class="clear-float-both"></div>
 		<ul class="navigation-bar-rounded-corners">

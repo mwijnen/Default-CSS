@@ -6,7 +6,7 @@
 	<link href="../CSS/all.css" rel="stylesheet">
 	<link href="../jQuery/css/custom-theme/jquery-ui-1.10.2.custom.css" rel="stylesheet">
 	<style>		
-		/*The horizontal space is defined here, since it is not part of the general style definition */
+		/*MW: The horizontal space is defined here, since it is not part of the general style definition */
 		.horizontal-space {
 			min-height:100px;
 		}
@@ -36,7 +36,7 @@
 </div>
 <div class="horizontal-space"></div>
 <div class="center">
-	<ul class="navigation-bar-rounded-corners">
+	<ul id="bluh" class="navigation-bar-rounded-corners">
 		<li><a href="#">First</a></li>
 		<li><a href="#">Second</a></li>
   	<li><a href="#">Third</a></li>
