@@ -10,7 +10,6 @@ The margin and padding need to be set to zero, because the default values are no
 */
 html, body {
 	height: 100%;
-	margin:0;
 	padding:0;
 }
 
@@ -20,7 +19,6 @@ The main structure is defined by the non-footer part and the footer part. As des
 */
 #non-footer {
 	min-height: 100%;
-	background-color: white;
 }
 
 .center {
@@ -42,7 +40,6 @@ The main structure is defined by the non-footer part and the footer part. As des
 .content-frame-medium-left,
 .content-frame-medium-right {
 	padding:0px;
-	background-color:white;
 	border:0px;
 	margin:0px; 		
 }

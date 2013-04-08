@@ -56,13 +56,8 @@ body{
 }
 /*MW(4-13): ToDo: Create a class to print image at top and bottom of div */
 
-.horizontal-line hr {
-	border:0;
-	margin-top:45px;
-  height: 1px;
-	color:#cccccc; //#ECE6E6; //#f2f1f1;
-	background-color:#cccccc; //#ECE6E6; //#f2f1f1;
-  width: 100%-5px;
+#non-footer-header {
+	border-bottom:1px solid #cccccc;
 }
 
 /*MW(4-13): Footer-content*/
