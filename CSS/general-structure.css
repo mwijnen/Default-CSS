@@ -20,7 +20,6 @@ The main structure is defined by the non-footer part and the footer part. As des
 */
 #non-footer {
 	min-height: 100%;
-	background-color: white;
 }
 
 .center {
@@ -42,7 +41,6 @@ The main structure is defined by the non-footer part and the footer part. As des
 .content-frame-medium-left,
 .content-frame-medium-right {
 	padding:0px;
-	background-color:white;
 	border:0px;
 	margin:0px; 		
 }
@@ -73,6 +71,7 @@ The main structure is defined by the non-footer part and the footer part. As des
 	padding-bottom: 150px; /*MW: this should match the footer height */
 }  
 
+/*MW(4-13): Note that the footer can not contain any elements with nonzero margin, this pushes the footer down and an unneccesary slider will appear*/
 #footer {
 	position: relative;
 	margin-top: -150px; /* negative value of footer height */

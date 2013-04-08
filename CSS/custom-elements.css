@@ -56,14 +56,28 @@ body{
 }
 /*MW(4-13): ToDo: Create a class to print image at top and bottom of div */
 
+.horizontal-line hr {
+	border:0;
+	margin-top:45px;
+  height: 1px;
+	color:#cccccc; //#ECE6E6; //#f2f1f1;
+	background-color:#cccccc; //#ECE6E6; //#f2f1f1;
+  width: 100%-5px;
+}
+
 /*MW(4-13): Footer-content*/
 .footer-content {
-	background-color:#ECE6E6;
-	min-height:150px;
+	border-top:solid 1px #cccccc;
+	border-left:solid 1px #cccccc;
+	border-right:solid 1px #cccccc;
+	background-color:#f2f1f1;
 	color:#777777;
 	font-size:9pt;
-	padding:12px;
-	padding-top:7px;
+	margin:0;
+	height:134px;
+	padding:15px;
+	padding-top:15px;
+	padding-bottom:0px;
 }
 .footer-content a:link,
 .footer-content a:visited,
@@ -71,6 +85,10 @@ body{
 .footer-content a:active {
 	text-decoration:underline;
 	color:#777777;
+}
+
+#tabs a {
+   outline: 0;
 }
 
 

@@ -166,24 +166,26 @@
 </head>
 <body>
 <div id="non-footer">	
-	<div id="non-footer-header" class="center">
-		<div>
-			<div class=image-wrapper-left>
-				<img src="logo-wijnen.png" alt="Logo">
+	<div id="non-footer-header">
+		<div class="center">
+			<div>
+				<div class=image-wrapper-left>
+					<img src="logo-wijnen.png" alt="Logo">
+				</div>
+				<div class=image-wrapper-right>
+					<img src="logo-funda-75.gif" alt="Logo">
+				</div>
 			</div>
-			<div class=image-wrapper-right>
-				<img src="logo-funda-75.gif" alt="Logo">
-			</div>
+			<div class="clear-float-both"></div>
+			<ul class="navigation-bar-rounded-corners">
+				<li><a href="#">Beginpagina</a></li>
+				<li><a href="#">Woningaanbod</a></li>
+	  		<li><a href="#">Overige diensten</a></li>
+	  		<li><a href="#">Site info</a></li>
+			</ul>
 		</div>
-		<div class="clear-float-both"></div>
-		<ul class="navigation-bar-rounded-corners">
-			<li><a href="#">Beginpagina</a></li>
-			<li><a href="#">Woningaanbod</a></li>
-	  	<li><a href="#">Overige diensten</a></li>
-	  	<li><a href="#">Site info</a></li>
-		</ul>
+		<div class="horizontal-line"><hr></div>
 	</div>
-
 	<div id="non-footer-container" class="center">
 		<br/><br/>
 		<div class="content-frame-small-right">
@@ -209,7 +211,7 @@
 			<h3>Third</h3>
 			<div>Nam dui erat, auctor a, dignissim quis.</div>
 		</div>
-
+		<br/>
 		<div id="tabs">
 			<ul>
 				<li><a href="#tabs-1">First</a></li>
@@ -223,10 +225,28 @@
 	</div>
 </div>
 
-<div id="footer" class="center">
-	<div class="footer-content">
-		Makelaar J.C.M. Wijnen - Goossens. Postadres: Beatrixpark 1A, 4872BH te Etten-Leur Telefoon: 0765035437 Fax: 0765022891 
-		e-mail: <a HREF="mailto:info@makelaarwijnen.nl">info@makelaarwijnen.nl</a>
+<div id="footer">
+	<div class="center">
+		<div class="footer-content"><!--
+			<div class="content-frame-small-left">
+				<table>
+					<tr><td>Makelaar J.C.M. Wijnen - Goossens</td></tr>
+					<tr><td>Beatrixpark 1A</td></tr>
+					<tr><td>4872BH Etten-Leur</td></tr>
+					<tr><td>tel: 0765035437 - fax: 0765022891</td></tr>
+					<tr><td>email: <a href="mailto:info@makelaarwijnen.nl">info@makelaarwijnen.nl</a></tr>
+				</table>
+			</div>
+			<div class="content-frame-small-right">
+				<table>
+					<tr><td><a href="#">Beginpagina<a></td></tr>
+					<tr><td><a href="#">Woningaanbod<a></td></tr>
+					<tr><td><a href="#">Overige diensten<a></td></tr>
+					<tr><td><a href="#">Site info<a></td></tr>
+				</table>
+			</div>
+			-->
+		</div>
 	</div>
 </div>
 </body>

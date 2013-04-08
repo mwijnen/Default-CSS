@@ -4,7 +4,6 @@ Marcel Wijnen
 Default layout structure
 */
 
-
 /*
 MW(4-13):
 The margin and padding need to be set to zero, because the default values are not zero. The latter will mess up certain other aspects.
@@ -74,6 +73,7 @@ The main structure is defined by the non-footer part and the footer part. As des
 	padding-bottom: 150px; /*MW: this should match the footer height */
 }  
 
+/*MW(4-13): Note that the footer can not contain any elements with nonzero margin, this pushes the footer down and an unneccesary slider will appear*/
 #footer {
 	position: relative;
 	margin-top: -150px; /* negative value of footer height */
