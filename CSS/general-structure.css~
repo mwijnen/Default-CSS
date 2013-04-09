@@ -10,9 +10,9 @@ The margin and padding need to be set to zero, because the default values are no
 */
 html, body {
 	height: 100%;
+	margin:0;
 	padding:0;
 }
-
 /*
 MW(4-13): 
 The main structure is defined by the non-footer part and the footer part. As described in http://www.cssstickyfooter.com/using-sticky-footer-code.html this structure is needed to create a footer that sticks to the bottom in case the content of the page is less then 100%.
@@ -20,22 +20,24 @@ The main structure is defined by the non-footer part and the footer part. As des
 #non-footer {
 	min-height: 100%;
 }
-
 .center {
-	width:900px;
+	width:920px;
 	margin:0px auto;
 }
-
- .float_left {
+.float_left {
 	float:left;
 }
-
 .float_right {
 	float:right;
 }
-
-/*MW: it is convenient to choose the padding & border & margin to be zero, since the element is about structuring the page only*/
+/*MW(4-13): The structure is as follows; each size is a multiple of plus the margins */
+/*MW(4-13): small-left => width = width plus margin-right*/
+/*MW(4-13): small-center => width = width */
+/*MW(4-13): small-right => width = width plus margin-left*/
+/*MW(4-13): medium-left => width = width, since it will be combined with small-right (which has the margin) */
+/*MW(4-13): medium-right => width = width, since it will be combined with small-left (which has the margin) */
 .content-frame-small-left, 
+.content-frame-small-center,
 .content-frame-small-right,
 .content-frame-medium-left,
 .content-frame-medium-right {
@@ -44,14 +46,16 @@ The main structure is defined by the non-footer part and the footer part. As des
 	margin:0px; 		
 }
 .content-frame-small-left, 
+.content-frame-small-center,
 .content-frame-small-right {
-	width:300px;
+	width:295px;
 }
 .content-frame-medium-left, 
 .content-frame-medium-right {
-	width:600px;
+	width:610px;
 }
 .content-frame-small-left,
+.content-frame-small-center, /*MW(4-13): Note that a dummy .content-frame-small-LEFT is needed to use the .content-frame-small-CENTER*/
 .content-frame-medium-left {
 	float:left;
 }
@@ -60,21 +64,26 @@ The main structure is defined by the non-footer part and the footer part. As des
 .content-frame-medium-right {
 	float:right;
 }
-
+.content-frame-small-left {
+	margin-right:10px;
+}
+.content-frame-small-right {
+	margin-left:10px;
+}
 #non-footer-header {
 	height:auto;
 }
 
 #non-footer-container {
 	overflow:auto;
-	padding-bottom: 150px; /*MW: this should match the footer height */
+	padding-bottom: 120px; /*MW: this should match the footer height */
 }  
 
 /*MW(4-13): Note that the footer can not contain any elements with nonzero margin, this pushes the footer down and an unneccesary slider will appear*/
 #footer {
 	position: relative;
-	margin-top: -150px; /* negative value of footer height */
-	height: 150px;
+	margin-top: -120px; /* negative value of footer height */
+	height: 120px;
 } 
 
 /*Opera Fix*/

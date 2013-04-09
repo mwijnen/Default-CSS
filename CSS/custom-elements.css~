@@ -4,15 +4,16 @@ body{
 	font: 10pt "Trebuchet MS", sans-serif;
 }
 
-/*MW(4-13): Header-navigation-bar */
+/*MW(4-13): Header-navigation-bar. Note that the width is set to center width minus the padding */
 .navigation-bar, 
 .navigation-bar-rounded-corners {
 	font-size:10pt;
-	width: 893px;
+	width: 900px; 
 	float: left;
 	margin: 0;
 	padding: 0;
-	padding-left:7px;
+	padding-left:10px;
+	padding-right:10px;
 	list-style: none;
 	border-right: 1px solid #777777;
 	background: #2c2e91 url(../jQuery/css/custom-theme/images/ui-bg_glass_40_4043CE_1x400.png) 50% 50% repeat-x;
@@ -70,9 +71,9 @@ body{
 	color:#777777;
 	font-size:9pt;
 	margin:0;
-	height:134px;
+	height:114px;
 	padding:15px;
-	padding-top:15px;
+	padding-top:5px;
 	padding-bottom:0px;
 }
 .footer-content a:link,
@@ -88,24 +89,19 @@ body{
 }
 
 /*MW(4-13): Content frames */
-.content-wrapper-right, .content-wrapper-left {
+.content-wrapper {
 	border:solid 1px #cccccc;
 	background-color:white; //#f2f1f1;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 	font-size:9pt;	
-	width:auto;
+	width:auto; 
 	height:100%;
-	margin:7px;
 	padding:7px;
+	margin:0;
+	margin-top:10px;
 }
-.content-wrapper-right {
-	margin-right:0;
-}
-.content-wrapper-left {
-	margin-left:0;
-}
-.content-wrapper-header {
+.content-wrapper-header-dark, .content-wrapper-header-light {
 	border:solid 1px #cccccc;
 	background-color:#f2f1f1;
 	-moz-border-radius: 4px;
@@ -115,13 +111,16 @@ body{
 	padding:4px;
 	padding-left:8px;
 	font-weight:bold;
-	font-size:10pt;
-	color:white;
-	/* background-color:#f2f1f1; //white; */
+	font-size:10pt;	
+}
+.content-wrapper-header-dark {
 	background-image:url(../jQuery/css/custom-theme/images/ui-bg_diagonals-small_30_333333_40x40.png);
 	background-repeat:repeat;
+	color:white;
 }
-
+.content-wrapper-header-light {
+	background-color:#f2f1f1;
+}
 
 
 
