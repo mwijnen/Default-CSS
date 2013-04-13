@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCFhUgOfX9M_Virx3cw46q2o5dKlcHgIAI&sensor=false"></script>
+<!--
+MW(4-13): as described in http://www.w3schools.com/googleAPI/google_maps_basic.asp; use the following for HTTPS
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&sensor=TRUE_OR_FALSE"></script>
+-->
+<script>
+var myCenter=new google.maps.LatLng(52.08459,4.30091);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+
+var infowindow = new google.maps.InfoWindow({
+  content:"Hello World!"
+  });
+
+google.maps.event.addListener(marker, 'mouseover', function() {
+  infowindow.open(map,marker);
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>
