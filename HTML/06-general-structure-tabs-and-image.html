@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+	<link href="../CSS/all.css" rel="stylesheet">
+	<link href="../jQuery/css/custom-theme/jquery-ui-1.10.2.custom.css" rel="stylesheet">
+	<script src="../jQuery/js/jquery-1.9.1.js"></script>
+	<script src="../jQuery/js/jquery-ui-1.10.2.custom.js"></script>
+	<script>
+	$(function() {		
+		$( "#tabs" ).tabs();
+	});
+	</script>
+</head>
+<body>
+<div id="non-footer">	
+	<div id="non-footer-header">
+		<div class="center">
+			<div>
+				<div class=image-wrapper-left><img src="logo-wijnen.png" alt="Logo"></div>
+				<div class=image-wrapper-right><img src="logo-funda-75.gif" alt="Logo"></div>
+			</div>
+			<div class="clear-float-both"></div>
+			<ul class="navigation-bar-rounded-corners">
+				<li><a href="#">Beginpagina</a></li>
+				<li><a href="#">Woningaanbod</a></li>
+	  		<li><a href="#">Overige diensten</a></li>
+	  		<li><a href="#">Site info</a></li>
+			</ul>
+		</div>
+		<div class="clear-float-both"></div>
+	</div>
+	<div id="non-footer-container" class="center">
+		<div class="content-frame-medium-left">
+			<div class="content-wrapper">
+				<div class="content-wrapper-header-dark">De Ruijterstraat 56 - 2518AT - Den Haag</div>
+				<div class="product-details-content-left">
+					<img class="product-details-image" src="house.JPG" alt="photo" width="180" height="120">
+				</div>				
+				<div class="product-details-content-right">
+					<!--<div class="product-listing-title">De Ruijterstraat 56 - 2518AT - Den Haag</div>
+					<div class="product-listing-subtitle">Appartement</div>
+					<!--<div class="product-listing-description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>-->
+					<!--<div class="product-listing-footer">Woonoppervlakte: 65m2</div>-->
+					Status: Beschikbaar<br/>
+					Soort object: appartement<br/>
+					Soort woonhuis: eengezinswoning<br/>
+					Type woonhuis: vrijstaande woning<br/>
+					Soort-appartement: portiekflat<br/>
+					Woonoppervlakte: 65m2<br/>
+					Kamers: 3<br/>
+					Bouwjaar: 1987<br/>
+					Vraagprijs: €169.000,--<br/></div>
+				<div class="clear-float-both"></div>
+			</div>
+		</div>			
+		<div class="content-frame-small-right">
+			<div class="content-wrapper">
+				<div class="content-wrapper-header-green">Contact met de makelaar</div>
+				<table>
+					<tr><td>Makelaar J.C.M. Wijnen - Goossens</td></tr>
+					<tr><td>Beatrixpark 1A</td></tr>
+					<tr><td>4872BH Etten-Leur</td></tr>
+					<tr><td>tel: 0765035437 - fax: 0765022891</td></tr>
+					<tr><td>email: <a href="mailto:info@makelaarwijnen.nl">info@makelaarwijnen.nl</a></tr>
+				</table>
+			</div>			
+		</div>
+		<div class="clear-float-both"></div>
+		<div class="content-frame-large">
+			<div id="tabs" class="product-details-tabs">
+				<ul>
+					<li><a href="#tabs-1">First</a></li>
+					<li><a href="#tabs-2">Second</a></li>
+					<li><a href="#tabs-3">Third</a></li>
+				</ul>
+				<div id="tabs-1" class="product-details-tabs-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+				<div id="tabs-2" class="product-details-tabs-content">tab-2</div>
+				<div id="tabs-3" class="product-details-tabs-content">tab-3</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+	<div class="center">
+		<div class="footer-content">
+			<div class="content-frame-small-left">
+				<table>
+					<tr><td>Makelaar J.C.M. Wijnen - Goossens</td></tr>
+					<tr><td>Beatrixpark 1A</td></tr>
+					<tr><td>4872BH Etten-Leur</td></tr>
+					<tr><td>tel: 0765035437 - fax: 0765022891</td></tr>
+					<tr><td>email: <a href="mailto:info@makelaarwijnen.nl">info@makelaarwijnen.nl</a></tr>
+				</table>
+			</div>
+			<div class="content-frame-small-right">
+				<table>
+					<tr><td><a href="#">Beginpagina<a></td></tr>
+					<tr><td><a href="#">Woningaanbod<a></td></tr>
+					<tr><td><a href="#">Overige diensten<a></td></tr>
+					<tr><td><a href="#">Site info<a></td></tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
