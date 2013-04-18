@@ -29,11 +29,12 @@
         var northEast = bounds.getNorthEast();
         var lngSpan = northEast.lng() - southWest.lng();
         var latSpan = northEast.lat() - southWest.lat();
-      	var image = 'logo-wijnen.png';
+      	var image = 'house-icon.png';
         function createMarker(map, position, number) {
           var marker = new google.maps.Marker({
             position: position,
-            map: map
+            map: map,
+						icon: image
           });
       
           google.maps.event.addListener(marker, 'click', function() {

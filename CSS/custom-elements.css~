@@ -102,7 +102,7 @@ body{
 	margin:0;
 	margin-top:10px;
 }
-.content-wrapper-header-dark, .content-wrapper-header-light {
+.content-wrapper-header-dark, .content-wrapper-header-light, .content-wrapper-header-green {
 	border:solid 1px #cccccc;
 	background-color:#f2f1f1;
 	-moz-border-radius: 4px;
@@ -121,6 +121,9 @@ body{
 }
 .content-wrapper-header-light {
 	background-color:#f2f1f1;
+}
+.content-wrapper-header-green {
+	background-color:#6FF263;
 }
 
 /*MW(4-13): Product listing style elements */
@@ -150,7 +153,9 @@ body{
 	font-weight:bold;
 	font-size:10pt;
 	margin-top:-20px;
-	background-color:#6FF263; /**/
+	/*background-color:#f2f1f1; /**/
+	/*background-color:#6FF263; /**/
+	background-color:#66FF66; /**	/
 	/*background-image:url(../jQuery/css/custom-theme/images/ui-bg_diagonals-small_30_333333_40x40.png); /**/
 	/*color:white; /**/
 	text-align:right;

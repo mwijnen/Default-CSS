@@ -5,7 +5,7 @@
 	<title>jQuery UI Example Page</title>
 	<link href="../CSS/all.css" rel="stylesheet">
 	<link href="../jQuery/css/custom-theme/jquery-ui-1.10.2.custom.css" rel="stylesheet">
-	<script src="../jQuery/js/jquery-1.9.1.js"></script>
+	<!-- script src="../jQuery/js/jquery-1.9.1.js"></script><!-- -->
 	<script src="../jQuery/js/jquery-ui-1.10.2.custom.js"></script>
 	<script>
 	$(function() {		
@@ -58,7 +58,7 @@
 		</div>			
 		<div class="content-frame-small-right">
 			<div class="content-wrapper">
-				<div class="content-wrapper-header-green">Contact met de makelaar</div>
+				<div class="content-wrapper-header-light">Contact met de makelaar</div>
 				<table>
 					<tr><td>Makelaar J.C.M. Wijnen - Goossens</td></tr>
 					<tr><td>Beatrixpark 1A</td></tr>
@@ -76,9 +76,9 @@
 					<li><a href="#tabs-2">Second</a></li>
 					<li><a href="#tabs-3">Third</a></li>
 				</ul>
-				<div id="tabs-1" class="product-details-tabs-content"></div>
-				<div id="tabs-2" class="product-details-tabs-content"></div>
-				<div id="tabs-3" class="product-details-tabs-content"></div>
+				<div id="tabs-1" class="product-details-tabs-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+				<div id="tabs-2" class="product-details-tabs-content">tab-2</div>
+				<div id="tabs-3" class="product-details-tabs-content">tab-3</div>
 			</div>
 		</div>
 	</div>
